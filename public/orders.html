@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"
+        integrity="sha512-xIPqqrfvUAc/Cspuj7Bq0UtHNo/5qkdyngx6Vwt+tmbvTLDszzXM0G6c91LXmGrRx8KEPulT+AfOOez+TeVylg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+
+    <link href="orders.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!--Tabs -->
+        <div class="tab">
+            <button class="tablinks active">All categories</button>
+            <button class="tablinks">Parfume</button>
+            <button class="tablinks">Lipstik</button>
+            <button class="tablinks">Mascara</button>
+            <button class="btnBack">Back to products</button>
+        </div>
+
+        <!--Table of products -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Order Number</th>
+                    <th>Product</th>
+                    <th>Date</th>
+                    <th>Product Price</th>
+                    <th>Order Price</th>
+                </tr>
+            </thead>
+
+            <tbody class ="tbody">
+
+            </tbody>
+        </table>
+    </div>
+</body>
+
+    <script src="./dist/orders.js"></script>
+    <script src="./dist/control/helpers.js"></script>
+</html>

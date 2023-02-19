@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home Work ECommerce</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"
+    integrity="sha512-xIPqqrfvUAc/Cspuj7Bq0UtHNo/5qkdyngx6Vwt+tmbvTLDszzXM0G6c91LXmGrRx8KEPulT+AfOOez+TeVylg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://kit.fontawesome.com/f15b6b1557.js" crossorigin="anonymous"></script>
+    <link href="./addtocart.css" rel="stylesheet">
+
+</head>
+
+<body onload="getUserFromCookie()">
+    <div class="header">      
+        <p class="logo"><image class = "beauty" src ="./images/beauty.jpg"></p>
+        <div class ="dropdown">
+            <select name ="selectBox" class ="selectBox">
+                <option value = "1">---- Categories ----</option>  
+                <option value = "2">All</option>
+                <option value = "3">Parfume</option>  
+                <option value = "4">Lipstik</option>     
+                <option value = "5">Mascara</option>       
+             </select>
+        </div>            
+       
+        <div class="cart">
+            <div class="homePage"><i class="fa-solid fa-house-chimney-window"></i></div>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <p id="count">0</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="root"></div>
+        <div class="sidebar"> 
+            <div class="head">  
+                <p id="count">My Cart</p>
+             </div>
+             <h4 class="userCookie"></h4> 
+ 
+            <div id="cartitem">Your cart is empty</div>
+            <div class="foot">
+                <h3>Total</h3>
+                <h2 id="total">$ 0.00</h2>                
+            </div>
+            <div class = "buttons">
+                <button class = "readyOrder">Finish</button>
+                <button class = "viewOrders"> My history</button>
+            </div>
+        </div>
+    </div>  
+     
+</body>
+
+<script src="./dist/addtocart.js"></script>
+
+</html>

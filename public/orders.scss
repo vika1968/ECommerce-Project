@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body, html{
+    height: 100%;
+    background-color:rgb(192, 205, 240);      
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}  
+
+.tab {    
+     display: flex;
+     gap: 12px;
+     margin: 50px 0px ;
+     width:30%;
+
+          button {                 
+                font-size: 15px;
+                color:white;       
+                width: 250px;
+                border-style: 1px solid rgb(145, 166, 224);
+                border-radius: 10%;     
+                cursor: pointer;
+                padding: 10px 16px;
+                margin: 5px;
+                transition: 0.5s;
+                background-color:rgb(146, 169, 232);   
+              
+                &:hover {
+                      background-color: rgb(90, 108, 160);
+                  }
+          }  
+ }
+
+.tab button.active {     
+      background-color: slategrey;
+}
+
+table{  
+    width:35%;
+    background-color: rgb(213, 225, 236); 
+    border: 1px solid #2b203d;
+    border-spacing: 5px;    
+          td{
+                border: 1px solid #2b203d;  
+          }
+          thead{
+                font-size: large;
+          }
+}
+

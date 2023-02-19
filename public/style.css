@@ -1,0 +1,126 @@
+html,
+body {
+  height: 100%;
+}
+
+body,
+.signin {
+  background-color: #d3d3d3;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .loginDiv {
+  justify-content: center;
+  height: 350px;
+  width: 400px;
+  margin: auto;
+  padding: 60px 60px;
+  background-color: #997a8d;
+  background-size: cover;
+  box-shadow: 0px 30px 60px -5px #997a8d;
+}
+body .loginDiv .loginHeader {
+  border-bottom: 2px solid white;
+}
+body .loginDiv .registerHeader {
+  color: rgba(255, 255, 255, 0.5);
+}
+body .loginDiv h2 {
+  padding-left: 12px;
+  font-size: 22px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  letter-spacing: 2px;
+  display: inline-block;
+  font-weight: 100;
+}
+body .loginDiv h2:first-child {
+  padding-left: 0px;
+}
+body .loginDiv span {
+  text-transform: uppercase;
+  font-size: 12px;
+  opacity: 0.4;
+  display: inline-block;
+  position: relative;
+  top: -65px;
+  transition: all 0.5s ease-in-out;
+}
+body .loginDiv .text {
+  border: none;
+  width: 89%;
+  padding: 10px 20px;
+  display: block;
+  height: 15px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0);
+  overflow: hidden;
+  margin-top: 15px;
+  transition: all 0.5s ease-in-out;
+}
+body .loginDiv .text:focus {
+  outline: 0;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0);
+}
+body .loginDiv .text:focus + span {
+  opacity: 0.6;
+}
+body .loginDiv input[type=text],
+body .loginDiv input[type=password] {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+body .loginDiv input {
+  display: inline-block;
+  padding-top: 20px;
+  font-size: 14px;
+}
+body .loginDiv h2,
+body .loginDiv span {
+  margin-left: 20px;
+}
+body .loginDiv label {
+  display: inline-block;
+  padding-top: 10px;
+  padding-left: 5px;
+}
+body .loginDiv .signin {
+  background-color: #8a5b78;
+  color: #FFF;
+  width: 100%;
+  padding: 10px 20px;
+  display: block;
+  height: 39px;
+  border-radius: 20px;
+  margin-top: 30px;
+  transition: all 0.5s ease-in-out;
+  border: none;
+  text-transform: uppercase;
+}
+body .loginDiv .signin:hover {
+  background: #84426a;
+  box-shadow: 0px 4px 35px -5px #613f54;
+  cursor: pointer;
+}
+body .loginDiv #idUserName:hover,
+body .loginDiv #idPassword:hover {
+  cursor: cell;
+}
+body .loginDiv .loginHeader:hover,
+body .loginDiv .registerHeader:hover {
+  cursor: pointer;
+}
+body .loginDiv .signin:focus {
+  outline: none;
+}
